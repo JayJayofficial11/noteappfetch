@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    flex-shrink: 1;
+}
+html{
+    scroll-behavior: smooth;
+}
+.fixedNav{
+    z-index: -2;
+    height: 100vh;
+    background-color: aliceblue;
+    width: 30vw;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+#container {
+    position: relative;
+    margin: 20px;
+    height: 100%;
+    width: 100%;
+   text-align: center;
+   padding: 100px;
+   color: aliceblue;
+   
+    
+    
+  }
+
+  #container button{
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: aliceblue;
+    color: black;
+  }
+  input{
+    background-color: white;
+  }
+
+  #container input{
+    width: 40vw;
+    border: none;
+  }
+
+  #container input:active{
+    border: none;
+  }
+
+
+
+  #container button:hover{
+    background-color: pink;
+    transition: 0.5s;
+    color: white;
+  }
+  button{
+    height: 30px;
+    width: 100px;
+    margin: 2px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+  }
+  .icon{
+    
+    position: absolute;
+    font-size: 50px;
+    right: 200px;
+    bottom: 100px;
+    color: pink;
+    animation: spinner 1s infinite;
+  }
+  i{
+    height: 50px;
+    width: 50px;
+    animation: spinner 1s infinite;
+  }
+  input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    z-index: 2;
+
+  }
+  ul {
+    list-style-type: none;
+   
+  }
+  li {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  span{
+    color: pink;
+  }
+
+  @keyframes spinner {
+    from{
+        transform: rotatey(0deg);
+    }
+    to{
+        transform: rotatey(360deg);
+    }
+  }
